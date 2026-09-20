@@ -132,7 +132,66 @@
     <div class="slide-inner" id="ws03-programacion">
       <span class="workshop-number">WS 03</span>
       <h1>Programació</h1>
-      <!-- EDITA: contenido específico de esta sesión (estilo pendiente) -->
+
+      <div class="ws-03-grid">
+        <article class="ws-03-card" id="ws03-variables-tipos">
+          <div class="ws-03-card-header">
+            <div class="ws-03-icon" aria-hidden="true">Var</div>
+            <h2>Variables y tipos de datos</h2>
+          </div>
+          <p class="ws-03-card-description">Así se declara una variable de cada tipo básico en Kotlin.</p>
+          <pre><code><span class="ws-03-keyword">var</span> edad: <span class="ws-03-type">Int</span> = 20
+<span class="ws-03-keyword">val</span> precio: <span class="ws-03-type">Float</span> = 4.5f
+<span class="ws-03-keyword">val</span> nombre: <span class="ws-03-type">String</span> = <span class="ws-03-string">"Ana"</span>
+<span class="ws-03-keyword">var</span> activo: <span class="ws-03-type">Boolean</span> = <span class="ws-03-keyword">true</span></code></pre>
+        </article>
+
+        <article class="ws-03-card" id="ws03-condicionales">
+          <div class="ws-03-card-header">
+            <div class="ws-03-icon" aria-hidden="true">If</div>
+            <h2>Condicionales</h2>
+          </div>
+          <p class="ws-03-card-description">Con <code>if / else</code> decidimos qué bloque de código se ejecuta según una condición.</p>
+          <pre><code><span class="ws-03-keyword">val</span> edad = 20
+      <span class="ws-03-keyword">if</span> (edad &gt;= 18) {
+        <span class="ws-03-function">println</span>(<span class="ws-03-string">"Eres mayor de edad"</span>)
+      } <span class="ws-03-keyword">else</span> {
+        <span class="ws-03-function">println</span>(<span class="ws-03-string">"Eres menor de edad"</span>)
+      }</code></pre>
+        </article>
+
+        <article class="ws-03-card ws-03-card-wide" id="ws03-ejemplo-practico">
+          <div class="ws-03-card-header">
+            <div class="ws-03-icon" aria-hidden="true">&gt;_</div>
+            <h2>Ejemplo práctico</h2>
+          </div>
+          <pre><code><span class="ws-03-keyword">fun</span> <span class="ws-03-function">main</span>() {
+
+        <span class="ws-03-function">print</span>(<span class="ws-03-string">"Ingresa el primer numero: "</span>)
+        <span class="ws-03-keyword">val</span> num1: <span class="ws-03-type">Float</span> = readln().toFloat()
+
+        <span class="ws-03-function">print</span>(<span class="ws-03-string">"Ingresa el segundo numero: "</span>)
+        <span class="ws-03-keyword">val</span> num2: <span class="ws-03-type">Float</span> = readln().toFloat()
+
+        <span class="ws-03-function">print</span>(<span class="ws-03-string">"Ingresa un numero para elegir la operacion:\n1. Suma \n2. Resta\n3. Division\n4. Multiplicar\n\nIngresa el numero: "</span>)
+        <span class="ws-03-keyword">val</span> num3: <span class="ws-03-type">Int</span> = readln().toInt()
+
+        <span class="ws-03-keyword">if</span> (num3 == 1) {
+          <span class="ws-03-function">print</span>(<span class="ws-03-string">"El resultado es: "</span> + (num1 + num2))
+        }
+        <span class="ws-03-keyword">if</span> (num3 == 2) {
+          <span class="ws-03-function">print</span>(<span class="ws-03-string">"El resultado es: "</span> + (num1 - num2))
+        }
+        <span class="ws-03-keyword">if</span> (num3 == 3) {
+          <span class="ws-03-function">print</span>(<span class="ws-03-string">"El resultado es: "</span> + (num1 / num2))
+        }
+        <span class="ws-03-keyword">if</span> (num3 == 4) {
+          <span class="ws-03-function">print</span>(<span class="ws-03-string">"El resultado es: "</span> + (num1 * num2))
+        }
+
+      }</code></pre>
+        </article>
+      </div>
     </div>
   </section>
   <section class="slide ws-slide ws-04" id="slide-4" data-label="WS04">
