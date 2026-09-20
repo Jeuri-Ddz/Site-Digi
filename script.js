@@ -35,6 +35,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Convierte el scroll vertical del ratón/trackpad en desplazamiento horizontal
   deck.addEventListener('wheel', (e) => {
+    const exampleScroll = e.target instanceof Element
+      ? e.target.closest('.example-scroll')
+      : null;
+
+    if (exampleScroll) {
+      const maxScrollTop = exampleScroll.scrollHeight - exampleScroll.clientHeight;
+      const canScrollUp = e.deltaY < 0 && exampleScroll.scrollTop > 0;
+      const canScrollDown = e.deltaY > 0 && exampleScroll.scrollTop < maxScrollTop;
+
+      if (canScrollUp || canScrollDown) {
+        e.stopPropagation();
+        return;
+      }
+    }
+
     if (e.target instanceof Element && e.target.closest('pre')) return;
 
     if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
