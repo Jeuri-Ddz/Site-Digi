@@ -133,9 +133,9 @@ h1, h2, h3{
 .slide-inner{ max-width: 760px; margin: 0 auto; width: 100%; }
 
 .slide.slide-dark{
-  background-color: var(--color-primary-dark);
+  background-color: #1a3a34;
   background-image:
-    linear-gradient(rgba(18,58,50,0.94), rgba(18,58,50,0.94)),
+    linear-gradient(rgba(26,58,52,0.94), rgba(26,58,52,0.94)),
     repeating-linear-gradient(0deg, rgba(255,255,255,0.05) 0 1px, transparent 1px 32px),
     repeating-linear-gradient(90deg, rgba(255,255,255,0.05) 0 1px, transparent 1px 32px);
   color: #fff;
@@ -154,7 +154,7 @@ h1, h2, h3{
 
 .slide-dark .workshop-number{ color: #E6B27A; }
 
-/* ---------- Tarjetas de equipo (slide Inicio) ---------- */
+/* ---------- Equipo de Digitalització ---------- */
 
 .card-grid{
   display: grid;
@@ -163,11 +163,102 @@ h1, h2, h3{
   margin-top: 32px;
 }
 
-.card{
+#ws-digitalitzacio-equip{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  margin-top: 32px;
+}
+
+.slide-dark .slide-inner:has(#ws-digitalitzacio-equip){
+  color: #f3f1ea;
+  text-align: center;
+}
+
+.slide-dark .slide-inner:has(#ws-digitalitzacio-equip) > h1{
+  color: #f3f1ea;
+}
+
+.slide-dark .slide-inner:has(#ws-digitalitzacio-equip) > p{
+  color: #f3f1ea;
+}
+
+.slide-dark:has(#ws-digitalitzacio-equip) .slide-inner{
+  max-width: 1180px;
+}
+
+.slide-dark .slide-inner:has(#ws-digitalitzacio-equip) > h1{
+  font-size: clamp(2.85rem, 5.7vw, 4.75rem);
+  margin-bottom: 18px;
+}
+
+.slide-dark .slide-inner:has(#ws-digitalitzacio-equip) > p{
+  max-width: 72ch;
+  margin: 0 auto;
+  font-size: clamp(1.05rem, 1.5vw, 1.25rem);
+  line-height: 1.65;
+}
+
+#ws-digitalitzacio-equip .card{
+  position: relative;
   background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.16);
-  border-radius: 12px;
-  padding: 18px;
+  border: 0;
+  border-radius: 0;
+  padding: 0 48px;
+  background: transparent;
+}
+
+#ws-digitalitzacio-equip{
+  gap: 48px;
+  margin-top: 54px;
+}
+
+#ws-digitalitzacio-equip .card:not(:last-child)::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background: rgba(243, 241, 234, 0.12);
+}
+
+#ws-digitalitzacio-equip .avatar{
+  width: 160px;
+  height: 160px;
+  margin: 0 auto 32px;
+  background: var(--accent, var(--color-accent));
+  color: #1a3a34;
+  font-weight: 700;
+  font-size: 1.55rem;
+}
+
+#ws-digitalitzacio-equip .avatar-photo{
+  display: block;
+  object-fit: cover;
+}
+
+#ws-digitalitzacio-equip h2{
+  color: #f3f1ea;
+  font-family: Georgia, serif;
+  font-size: clamp(1.75rem, 2.4vw, 1.9rem);
+  font-weight: 700;
+  margin: 0 0 12px;
+}
+
+#ws-digitalitzacio-equip .role{
+  font-family: monospace;
+  font-size: clamp(0.875rem, 1.2vw, 1rem);
+  letter-spacing: 0.04em;
+  color: #b8c4bf;
+  margin: 0 0 16px;
+}
+
+#ws-digitalitzacio-equip .card > p:last-child{
+  color: #b8c4bf;
+  font-size: clamp(1rem, 1.35vw, 1.1rem);
+  line-height: 1.6;
+  margin: 0;
 }
 
 .avatar{
@@ -1268,5 +1359,24 @@ h1, h2, h3{
   #slide-2 #ws02-block-01 .ws02-block-background{
     width: 70%;
     height: 58%;
+  }
+}
+
+@media (max-width: 640px){
+  #ws-digitalitzacio-equip{
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  #ws-digitalitzacio-equip .card{
+    padding: 0;
+  }
+
+  #ws-digitalitzacio-equip .card:not(:last-child)::after{
+    top: auto;
+    right: 10%;
+    bottom: -16px;
+    width: 80%;
+    height: 1px;
   }
 }
