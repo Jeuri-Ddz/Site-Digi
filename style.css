@@ -1065,6 +1065,123 @@ h1, h2, h3{
   overflow: auto;
 }
 
+#slide-2 #ws02-block-01{
+  position: relative;
+  overflow: hidden;
+}
+
+#slide-2 #ws02-block-01 .ws02-block-background{
+  position: absolute;
+  top: auto;
+  right: 18px;
+  bottom: 18px;
+  left: auto;
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+  opacity: 1;
+  z-index: 0;
+  pointer-events: none;
+}
+
+#slide-2 #ws02-block-01 > :not(.ws02-block-background){
+  position: relative;
+  z-index: 1;
+}
+
+#slide-2 #ws02-block-02{
+  position: relative;
+  overflow: hidden;
+}
+
+#slide-2 #ws02-block-02 .ws02-block-background{
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: 18px;
+  left: 50%;
+  width: 40%;
+  height: 40%;
+  object-fit: contain;
+  opacity: 1;
+  transform: translateX(-50%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+#slide-2 #ws02-block-02 > :not(.ws02-block-background){
+  position: relative;
+  z-index: 1;
+}
+
+#slide-2 #ws02-block-03{
+  position: relative;
+  overflow: hidden;
+}
+
+#slide-2 #ws02-block-03 .ws02-block-background{
+  position: absolute;
+  right: auto;
+  bottom: 18px;
+  left: 50%;
+  width: 40%;
+  height: 40%;
+  object-fit: contain;
+  opacity: 1;
+  transform: translateX(-50%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+#slide-2 #ws02-block-03 > :not(.ws02-block-background){
+  position: relative;
+  z-index: 1;
+}
+
+#slide-2 #ws02-block-04{
+  position: relative;
+  overflow: hidden;
+}
+
+#slide-2 #ws02-block-04 .ws02-block-background{
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  left: auto;
+  width: 65%;
+  height: 65%;
+  object-fit: contain;
+  opacity: 1;
+  z-index: 0;
+  pointer-events: none;
+}
+
+#slide-2 #ws02-block-04 > :not(.ws02-block-background){
+  position: relative;
+  z-index: 1;
+}
+
+#slide-2 .image-placeholder,
+.ws-05 .image-placeholder{
+  min-height: 58px;
+  margin-top: 16px;
+  border: 1.5px dashed var(--color-line);
+  border-radius: 8px;
+  background: var(--color-bg);
+  color: var(--color-ink-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0;
+  flex-shrink: 0;
+}
+
+.ws-05 .image-placeholder{
+  height: 64px;
+}
+
 #slide-2 #ws02-information-grid > article > span{
   display: block;
   font-family: var(--font-mono);
@@ -1119,5 +1236,10 @@ h1, h2, h3{
   #slide-2 #ws02-information-grid{
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, minmax(150px, 1fr));
+  }
+
+  #slide-2 #ws02-block-01 .ws02-block-background{
+    width: 70%;
+    height: 58%;
   }
 }
