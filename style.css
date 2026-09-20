@@ -753,7 +753,7 @@ h1, h2, h3{
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
+  border-radius: 10px;
   background: #fbe3d3;
   color: #d97757;
 }
@@ -798,23 +798,6 @@ h1, h2, h3{
   flex: 1;
 }
 
-.ws-06 .ws-06-brain-icon{
-  width: 84px;
-  height: 84px;
-  flex: 0 0 84px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #fbe3d3, #f4b58f);
-  color: #d97757;
-}
-
-.ws-06 .ws-06-brain-icon svg{
-  width: 58px;
-  height: 58px;
-}
-
 .ws-06 .ws-06-rascef{
   display: flex;
   align-items: flex-start;
@@ -837,7 +820,7 @@ h1, h2, h3{
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
+  border-radius: 4px;
   background: #1f4d43;
   color: #fff;
   font-family: var(--font-mono);
