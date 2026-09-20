@@ -720,8 +720,8 @@ h1, h2, h3{
   flex: 1;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  grid-template-rows: repeat(3, minmax(0, 1fr));
-  gap: 16px;
+  grid-template-rows: repeat(2, minmax(220px, 1fr));
+  gap: 20px;
   min-height: 0;
 }
 
@@ -729,10 +729,12 @@ h1, h2, h3{
   background: var(--color-surface);
   border: 1px solid var(--color-line);
   border-radius: 10px;
-  padding: clamp(16px, 2vw, 26px);
+  padding: clamp(20px, 2.4vw, 32px);
   min-width: 0;
   min-height: 0;
-  overflow: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .ws-05 .ws-05-card-header{
@@ -740,14 +742,6 @@ h1, h2, h3{
   align-items: center;
   gap: 12px;
   margin-bottom: 12px;
-}
-
-.ws-05 .ws-05-comparison{
-  grid-column: 1 / -1;
-}
-
-.ws-05 #ws05-client-servidor{
-  grid-column: 1 / -1;
 }
 
 .ws-05 .ws-05-comparison-grid{
