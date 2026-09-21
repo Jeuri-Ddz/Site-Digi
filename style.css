@@ -1694,3 +1694,34 @@ h1, h2, h3{
     height: 1px;
   }
 }
+
+/* Solo afecta a la diapositiva de conclusión, no al resto */
+#slide-8 {
+  position: relative;
+}
+
+#slide-8 .conclusion-slide {
+  position: absolute;
+  inset: 0;
+  width: auto;
+  height: auto;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #1E4B3E;
+}
+
+#slide-8 .conclusion-word {
+  margin: 0;
+  padding: 0 6vw;
+  max-width: 90%;
+  font-family: 'Fraunces', Georgia, 'Times New Roman', serif;
+  font-weight: 600;
+  font-size: clamp(3.2rem, 15vw, 12rem);
+  line-height: 0.88;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #F5F1E6;
+}
