@@ -269,7 +269,60 @@
     <div class="slide-inner" id="ws04-base-datos">
       <span class="workshop-number">WS 04 <a href="https://docs.google.com/presentation/d/12Jq6z88XIUfxE6htO1fnyp4GHRWKD0YDaAa2hz8hPfM/edit?slide=id.p#slide=id.p">Presentació</a> <a href="https://docs.google.com/document/d/191m-SXPF9sefQFjJ4p_8jhps4r5ZyuV-Wi66pzmfzpc/edit?tab=t.0">Activitat</a></span>
       <h1>Base de dades</h1>
-      <!-- EDITA: contenido específico de esta sesión (estilo pendiente) -->
+
+      <div class="ws-04-grid">
+        <article class="ws-04-card" id="ws04-origen">
+          <div class="ws-04-card-header">
+            <div class="ws-04-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v6c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 11v6c0 1.66 4.03 3 9 3s9-1.34 9-3v-6"/></svg>
+            </div>
+            <h2>D'on surten les bases de dades?</h2>
+          </div>
+          <p>Les bases de dades sorgeixen de la necessitat de desar grans volums d'informació de manera ordenada i, sobretot, de manera segura.</p>
+        </article>
+
+        <article class="ws-04-card" id="ws04-postgresql">
+          <div class="ws-04-card-header">
+            <div class="ws-04-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="6" rx="1"/><rect x="3" y="14" width="18" height="6" rx="1"/><circle cx="7" cy="7" r="1" fill="currentColor" stroke="none"/><circle cx="7" cy="17" r="1" fill="currentColor" stroke="none"/></svg>
+            </div>
+            <h2>PostgreSQL</h2>
+          </div>
+          <p>Per poder gestionar, crear i editar bases de dades es necessiten aplicacions gestores de bases de dades. Una de les més conegudes i utilitzades en aquest mòdul de digitalització ha estat <strong>PostgreSQL</strong>.</p>
+          <img class="ws-04-logo" src="https://kinsta.com/wp-content/uploads/2022/02/postgres-logo.png" alt="Logotip de PostgreSQL">
+        </article>
+
+        <article class="ws-04-card" id="ws04-cloud">
+          <div class="ws-04-card-header">
+            <div class="ws-04-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h.79a4.5 4.5 0 1 1 0 9z"/></svg>
+            </div>
+            <h2>Bases de dades al núvol</h2>
+          </div>
+          <p>Sistemes d'emmagatzematge que s'executen, gestionen i escalen a través d'una plataforma de computació al núvol (com <strong>AWS</strong>, <strong>Google Cloud</strong> o <strong>Azure</strong>) en lloc de servidors físics locals.</p>
+          <img class="ws-04-logo" src="https://blogwebperf.com/wp-content/uploads/2024/04/alwaysdata-logo.webp" alt="Exemple de proveïdor de bases de dades al núvol">
+        </article>
+
+        <article class="ws-04-card ws-04-card-query" id="ws04-consulta">
+          <div class="ws-04-card-header">
+            <div class="ws-04-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+            </div>
+            <h2>Exemple de consulta</h2>
+          </div>
+          <pre><code><span class="ws-04-keyword">select</span> * <span class="ws-04-keyword">from</span> departments <span class="ws-04-keyword">where</span> department_name <span class="ws-04-keyword">like</span> <span class="ws-04-string">'R%'</span></code></pre>
+          <table class="ws-04-result-table">
+            <thead>
+              <tr><th>department_id</th><th>department_name</th><th>manager_id</th><th>location_id</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>250</td><td>Retail Sales</td><td>NULL</td><td>1700</td></tr>
+              <tr><td>260</td><td>Recruiting</td><td>NULL</td><td>1700</td></tr>
+            </tbody>
+          </table>
+          <p class="ws-04-result-count">2 row(s)</p>
+        </article>
+      </div>
     </div>
   </section>
   <section class="slide ws-slide ws-05" id="slide-5" data-label="WS05">
@@ -402,7 +455,54 @@
     <div class="slide-inner" id="ws07-it-ot">
       <span class="workshop-number">WS 07 <a href="https://drive.google.com/file/d/1QnOx7c9enV6qdJcwzDR3PvH2cfRr9Ao-/view">Presentació</a> <a href="https://docs.google.com/document/d/1Qyir0Ys6yNVu15dqX3ZLvfAeLNchVY9lLRBC-PIg8oA/edit?tab=t.0">Activitat</a></span>
       <h1>IT/OT</h1>
-      <!-- EDITA: contenido específico de esta sesión (estilo pendiente) -->
+
+      <div class="ws-07-grid">
+        <article class="ws-07-card" id="ws07-infraestructura">
+          <div class="ws-07-card-header">
+            <div class="ws-07-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+            </div>
+            <h2>Què és una infraestructura</h2>
+          </div>
+          <p>Una <strong>infraestructura</strong> (coneguda com a infraestructura IT) és el conjunt de <strong>components de maquinari, programari, xarxes i instal·lacions</strong> necessaris per desenvolupar, provar, operar i gestionar els serveis tecnològics d'una empresa o aplicació.</p>
+        </article>
+
+        <article class="ws-07-card" id="ws07-virtualitzacio">
+          <div class="ws-07-card-header">
+            <div class="ws-07-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <h2>Virtualització</h2>
+          </div>
+          <ul>
+            <li>Sobre un servidor físic, executar diferents servidors virtuals</li>
+            <li>Cada servidor virtual té la seva part de memòria, CPU, targeta gràfica i disc dur reservada, però obtinguda del maquinari del servidor físic</li>
+          </ul>
+          <img class="ws-07-media-image" src="https://innovainformatica.com/images/virtua.png" alt="Esquema de virtualització de servidors">
+        </article>
+
+        <article class="ws-07-card" id="ws07-cloud-computing">
+          <div class="ws-07-card-header">
+            <div class="ws-07-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h.79a4.5 4.5 0 1 1 0 9z"/></svg>
+            </div>
+            <h2>Cloud computing</h2>
+          </div>
+          <p>Va néixer a principis dels anys 2000, quan les empreses tecnològiques van començar a llogar infraestructura a través d'Internet, permetent emmagatzemar dades i executar aplicacions en servidors remots sense necessitat d'equips físics locals.</p>
+          <img class="ws-07-media-image" src="https://cdn.shopify.com/s/files/1/0610/7640/6438/files/cloud-computing.png" alt="Il·lustració de cloud computing">
+        </article>
+
+        <article class="ws-07-card" id="ws07-exemple-virtualitzacio">
+          <div class="ws-07-card-header">
+            <div class="ws-07-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M8 20h8M12 16v4"/></svg>
+            </div>
+            <h2>Exemples de virtualització al núvol</h2>
+          </div>
+          <p>Visor d'escriptoris virtuals a Isard, utilitzat per accedir a màquines virtuals allotjades al núvol.</p>
+          <img class="ws-07-media-image ws-07-media-image-fill" src="https://isard.gitlab.io/suport/gencat-fp-manual/user/viewers/viewers.es.images/visor_spice_4.png" alt="Visor d'escriptoris virtuals a Isard">
+        </article>
+      </div>
     </div>
   </section>
   <section class="slide" id="slide-8" data-label="Conclusiones">
