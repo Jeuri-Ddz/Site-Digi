@@ -1216,6 +1216,26 @@ h1, h2, h3{
   flex-direction: column;
 }
 
+.ws-04 .ws-04-split{
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(140px, 220px);
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.ws-04 .ws-04-copy{
+  min-width: 0;
+  align-self: flex-start;
+}
+
+.ws-04 .ws-04-visual{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  height: 100%;
+}
+
 .ws-04 .ws-04-card-header{
   display: flex;
   align-items: center;
@@ -1253,13 +1273,24 @@ h1, h2, h3{
 .ws-04 .ws-04-card strong{ color: var(--color-ink); }
 
 .ws-04 .ws-04-logo{
+  display: none;
+}
+
+.ws-04 .ws-04-db-image,
+.ws-04 .ws-04-postgres-image,
+.ws-04 .ws-04-mysql-image{
   display: block;
-  width: auto;
-  max-width: 65%;
-  height: 52px;
+  width: min(100%, 240px);
+  height: 155px;
   object-fit: contain;
-  margin: auto auto 0;
-  padding-top: 14px;
+  margin: 18px auto 0;
+}
+
+.ws-04 .ws-04-split .ws-04-db-image{
+  width: min(100%, 220px);
+  height: 140px;
+  margin: 0;
+  align-self: center;
 }
 
 .ws-04 .ws-04-card-query pre{
