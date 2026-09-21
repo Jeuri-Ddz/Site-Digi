@@ -1056,40 +1056,76 @@ h1, h2, h3{
   align-self: start;
 }
 
+.ws-05 .ws05-media{
+  width: 100%;
+  margin-top: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+#ws05-client-servidor.ws05-client-layout{
+  display: grid !important;
+  grid-template-columns: minmax(0, 1.55fr) minmax(150px, 240px);
+  align-items: center;
+  gap: 18px;
+}
+
+#ws05-client-servidor .ws05-client-copy{
+  min-width: 0;
+}
+
+#ws05-client-servidor .ws05-client-copy > :last-child{
+  margin-bottom: 0;
+}
+
+#ws05-client-servidor .ws05-client-visual{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+}
+
+#ws05-client-servidor .ws05-client-image{
+  display: block;
+  width: min(100%, 240px);
+  height: 180px;
+  margin: 0;
+  object-fit: contain;
+  object-position: right center;
+}
 .ws-05 .ws05-uxui-image{
+  display: block;
   width: 100%;
   height: 255px;
-  margin-top: auto;
   object-fit: contain;
   object-position: center bottom;
 }
 
 .ws-05 .ws05-design-image{
+  display: block;
   width: 100%;
   height: 370px;
-  margin-top: auto;
   object-fit: contain;
   object-position: center bottom;
 }
 
 .ws-05 .ws05-architecture-image{
+  display: block;
   width: 100%;
   height: 350px;
-  margin-top: auto;
   object-fit: contain;
   object-position: center bottom;
 }
 
 .ws-05 .ws05-client-image{
-  align-self: flex-end;
-  width: 78%;
-  height: 300px;
-  margin-top: auto;
-  margin-right: 48px;
-  margin-bottom: 0;
+  display: block;
+  width: min(100%, 240px);
+  height: 180px;
+  margin: 0;
   object-fit: contain;
   object-position: right bottom;
-  transform: translate(0, -64px);
+  transform: none;
 }
 
 .ws-05 .ws-05-number{
@@ -1174,103 +1210,65 @@ h1, h2, h3{
   border-radius: 10px;
   padding: clamp(22px, 3vw, 36px);
   min-height: 0;
-  overflow: auto;
-}
-
-#slide-2 #ws02-block-01{
-  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 18px;
   overflow: hidden;
 }
 
-#slide-2 #ws02-block-01 .ws02-block-background{
-  position: absolute;
-  top: auto;
-  right: 18px;
-  bottom: 18px;
-  left: auto;
-  width: 70%;
-  height: 70%;
+#slide-2 #ws02-information-grid > article > .ws02-copy{
+  order: 1;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+#slide-2 .ws02-media{
+  order: 2;
+  flex: 0 0 clamp(150px, 36%, 340px);
+  width: 100%;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: clamp(130px, 19vw, 240px);
+}
+
+#slide-2 .ws02-block-background{
+  display: block;
+  width: min(100%, 330px);
+  height: clamp(120px, 16vw, 210px);
   object-fit: contain;
   opacity: 1;
-  z-index: 0;
+  margin: 0 auto;
   pointer-events: none;
 }
 
-#slide-2 #ws02-block-01 > :not(.ws02-block-background){
-  position: relative;
-  z-index: 1;
+#slide-2 #ws02-block-01 .ws02-media,
+#slide-2 #ws02-block-04 .ws02-media {
+  justify-content: flex-end;
 }
 
-#slide-2 #ws02-block-02{
-  position: relative;
-  overflow: hidden;
+#slide-2 #ws02-block-02 .ws02-media,
+#slide-2 #ws02-block-03 .ws02-media {
+  justify-content: center;
 }
 
-#slide-2 #ws02-block-02 .ws02-block-background{
-  position: absolute;
-  top: auto;
-  right: auto;
-  bottom: 18px;
-  left: 50%;
-  width: 40%;
-  height: 40%;
-  object-fit: contain;
-  opacity: 1;
-  transform: translateX(-50%);
-  z-index: 0;
-  pointer-events: none;
-}
+@media (max-width: 640px){
+  #slide-2 #ws02-information-grid > article{
+    flex-direction: column;
+    align-items: stretch;
+  }
 
-#slide-2 #ws02-block-02 > :not(.ws02-block-background){
-  position: relative;
-  z-index: 1;
-}
+  #slide-2 #ws02-information-grid > article > .ws02-copy,
+  #slide-2 .ws02-media{
+    order: initial;
+  }
 
-#slide-2 #ws02-block-03{
-  position: relative;
-  overflow: hidden;
-}
-
-#slide-2 #ws02-block-03 .ws02-block-background{
-  position: absolute;
-  right: auto;
-  bottom: 18px;
-  left: 50%;
-  width: 40%;
-  height: 40%;
-  object-fit: contain;
-  opacity: 1;
-  transform: translateX(-50%);
-  z-index: 0;
-  pointer-events: none;
-}
-
-#slide-2 #ws02-block-03 > :not(.ws02-block-background){
-  position: relative;
-  z-index: 1;
-}
-
-#slide-2 #ws02-block-04{
-  position: relative;
-  overflow: hidden;
-}
-
-#slide-2 #ws02-block-04 .ws02-block-background{
-  position: absolute;
-  right: 18px;
-  bottom: 18px;
-  left: auto;
-  width: 65%;
-  height: 65%;
-  object-fit: contain;
-  opacity: 1;
-  z-index: 0;
-  pointer-events: none;
-}
-
-#slide-2 #ws02-block-04 > :not(.ws02-block-background){
-  position: relative;
-  z-index: 1;
+  #slide-2 .ws02-media{
+    flex-basis: auto;
+    width: 100%;
+  }
 }
 
 #slide-2 .image-placeholder,
