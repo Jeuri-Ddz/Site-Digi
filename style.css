@@ -1367,6 +1367,27 @@ h1, h2, h3{
   flex-direction: column;
 }
 
+.ws-07 .ws-07-split{
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(160px, 260px);
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.ws-07 .ws-07-copy{
+  min-width: 0;
+  align-self: flex-start;
+}
+
+.ws-07 .ws-07-visual{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  height: 100%;
+  align-self: stretch;
+}
+
 .ws-07 .ws-07-card-header{
   display: flex;
   align-items: center;
@@ -1440,6 +1461,15 @@ h1, h2, h3{
   margin-top: auto;
   padding-top: 12px;
   object-fit: contain;
+}
+
+#ws07-exemple-virtualitzacio .ws-07-media-image-fill{
+  width: min(100%, 285px);
+  height: 184px;
+  margin: 0;
+  object-fit: contain;
+  border-radius: 8px;
+  padding-top: 0;
 }
 
 .ws-07 .ws-07-media-image-fill{
